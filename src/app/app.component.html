@@ -1,0 +1,14 @@
+<h1>welcome to Andromeda</h1>
+<br>
+<h2>This is interpolated**{{title}}**text</h2>
+<br>
+<button (click)="btnClick()"[disabled]="isDisabled">Click Me</button>
+<input type="text"[(ngModel)]="dynamicTxt"width="50px">
+<br>
+<h2>Dynamic text comes here~~{{dynamicTxt}}~~</h2>
+<br>
+<button (click)="TClicked()">Teacher</button>
+<br>
+<button (click)="SClicked()">Student</button>
+<br>
+<router-outlet></router-outlet>
